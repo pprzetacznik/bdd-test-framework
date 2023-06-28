@@ -2,7 +2,6 @@
 
 set -xe
 
-export TESTS_VERBOSE=false
 export TESTS_MARKERS="(feature or e2e) and not ignore"
 
 python \
