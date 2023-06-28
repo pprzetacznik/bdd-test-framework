@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-RESTful
+pytest
+pytest-bdd
+pytest-cov
+requests
