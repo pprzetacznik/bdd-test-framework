@@ -1,11 +1,11 @@
 @etl @e2e @ignore
-Feature: ETL jobs
-    ETL jobs for data analytics
+Feature: Data Lake ETL jobs
+    Data Lake ETL jobs for data analytics
 
     Scenario: Data is transfered from database to data lake
 
         Given prepared order in orders database
-        When data warehouse ingestion is triggered
+        When data lake ingestion is triggered
         Then data is published to message broker topic
         Then data is stored in raw zone
         Then transformation runs
