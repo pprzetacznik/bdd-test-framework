@@ -1,3 +1,4 @@
+from time import sleep
 from threading import Thread
 from pytest import fixture
 from my_app.server import create_app
@@ -17,6 +18,7 @@ def app():
 
     ctx = app.test_request_context()
     ctx.push()
+    sleep(3)
 
     yield app
 
