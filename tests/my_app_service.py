@@ -36,9 +36,12 @@ class MyAppService:
         result = self.server.get("/")
         return result.json()
 
-
     def login(self, username: str, password: str) -> dict:
         result = self.server.post(
             "/login", data={"username": username, "password": password}
         )
+        return result.json()
+
+    def currency(self) -> dict:
+        result = self.server.get("/currency")
         return result.json()
