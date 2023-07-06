@@ -13,6 +13,12 @@ $ ./run.sh run
 $ FLASK_DEBUG=1 ./run.sh
 ```
 
+## Run unit tests
+
+```
+$ ./run_tests.sh
+```
+
 ## Run automation tests
 
 Run them with:
