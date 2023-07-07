@@ -9,5 +9,5 @@ Feature: Data Lake ETL jobs
         Then data is published to message broker topic
         Then data is stored in raw zone
         Then transformation runs
-        Then data is stoed in trusted zone
+        Then data is stored in trusted zone
         Then report is published
